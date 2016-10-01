@@ -56,7 +56,7 @@
         $(document).ready(function() {
             $('.cards').before($("<span>", {"class":'title'}).text("Proverbs"));
             $.ajax({
-                type: "POST",
+                type: "GET",
                 url: "https://brentn.github.io/Proverbs/proverbs.xml", //"https://dl.dropboxusercontent.com/s/twt100ve5bpvkka/proverbs.xml?dl=1",
                 dataType: "xml",
                 success: function(xml) {
