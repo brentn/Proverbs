@@ -1,15 +1,15 @@
 <html ng-app="Proverbs">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>body{padding:20px 0 30px;font:14px/1.5 Arial, sans-serif;color:#333;background:#33cc00;}.title{font-size: 3em;position: relative;display: block;margin-bottom: 5px;margin-left: 50px;color: #279602;font-weight: 800;height: 10px;z-index: 1;}.card{max-width:600px;right:10px;left:10px;-moz-border-radius:10px;border-radius:10px;}.card .chapter{font-size:x-large;float:left;}.card .version{font-size:large;padding-right:20px;float:right;}.card .datepicker{width:100%}.card .heading {font-size:1.1em;font-weight:bold;text-align:center;margin-bottom:10px;}.card .text{font-weight:normal;text-indent:40px;white-space:pre-line;}.card .references {font-style:italic;color:darkgrey;font-size:small;margin-top:10px;margin-bottom:10px;}.card .missing {height:200px;padding-top:140px;font-size:large;text-align:center;}.drop-shadow {position:absolute;float:left;padding:1em; margin:2em 10px 4em;background:#fff;-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;}.drop-shadow:before,.drop-shadow:after {content:"";position:absolute;z-index:-2;}.drop-shadow p {font-size:16px;font-weight:bold;}.lifted:before,.lifted:after {bottom:15px;left:10px;width:50%;height:20%;max-width:300px;-webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);-moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);-webkit-transform:rotate(-3deg);-moz-transform:rotate(-3deg);-ms-transform:rotate(-3deg);-o-transform:rotate(-3deg);transform:rotate(-3deg);}.lifted:after {right:10px;left:auto;-webkit-transform:rotate(3deg);-moz-transform:rotate(3deg);-ms-transform:rotate(3deg);-o-transform:rotate(3deg);transform:rotate(3deg);}</style>
+  <link rel="stylesheet" href="styles/proverbs.css">
 </head>
 <body>
   <span class='title'>Proverbs</span>
-  <div class='card drop-shadow lifted'  ng-controller="ProverbsController as Proverbs">
+  <div class='card'  ng-controller="ProverbsController as Proverbs">
     <div class='chapter'>Chapter {{Proverbs.chapter}}</div>
     <div class='version'>{{Proverbs.version}}</div>
     <div style='clear:both;'></div>
-    <input type='range' min='1' max='31' class='datepicker' ng-model='Proverbs.chapter' ng-change='Proverbs.load()' />
+    <input type='range' min='1' max='31' class='datepicker' autofocus ng-model='Proverbs.chapter' ng-change='Proverbs.load()' />
     <p class='text' ng-repeat="verse in Proverbs.verses">{{verse}}</p>
   </div>
 
