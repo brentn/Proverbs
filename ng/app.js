@@ -20,9 +20,8 @@
       function() {
         Proverbs.version = ProverbsService.getVersion;
         Proverbs.load();
-      },
-      function() {console.error("error2")}
-    )
+      })
+      .catch(function() {console.error("error loading data")});
   }
 
   ProverbsService.$inject = ['$http', 'url'];
@@ -41,8 +40,7 @@
           service.getVerses = function(chapter) {
             return data.proverb[chapter-1].text.split('\n');
           }
-        },
-        function(error) {console.error("error")}
+        }
       );
       return promise;
     }
