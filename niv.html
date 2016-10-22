@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>body{padding:20px 0 30px;font:14px/1.5 Arial,sans-serif;color:#333;background:#3c0}.title{font-size:3em;position:relative;display:block;margin-bottom:5px;margin-left:50px;color:#279602;font-weight:800;height:10px;z-index:1}.card{max-width:600px;right:10px;left:10px;-moz-border-radius:10px;border-radius:10px;padding:1em;margin:2em 10px 4em;font-size:16px;background-color:#eef7cd;-webkit-box-shadow:4px 4px 8px;-moz-box-shadow:0 1px 4px rgba(0,0,0,.3) box-shadow:4px 8px 8px rgba(0,0,0,.3)}.card .chapter{font-size:x-large;float:left}.card .version{font-size:large;padding-right:20px;float:right}.card .datepicker{width:100%}.card input.datepicker:focus{outline:none}.card .heading{font-size:1.1em;font-weight:700;text-align:center;margin-bottom:10px}.card .text{color:darkslategray;font-weight:400;text-indent:40px;white-space:pre-line}.card .references{font-style:italic;color:darkgrey;font-size:small;margin-top:10px;margin-bottom:10px}.card .missing{height:200px;padding-top:140px;font-size:large;text-align:center}.card .text .lord{font-size:small}.card p.text{-webkit-animation:fadein 1s;-moz-animation:fadein 1s;animation:fadein 1s}@keyframes fadein{from{opacity:0}to{opacity:1}}@-moz-keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}</style>
+</head>
+<body>
+  <span class='title'>Proverbs</span>
+  <div class='card'>
+    <div class='chapter'></div>
+    <div class='version'></div>
+    <div style='clear:both;'></div>
+    <input type='range' min='1' max='31' class='datepicker' autofocus oninput='load(this.value);' />
+    <div id='verses'></div>
+  </div>
+  <script type='text/javascript'>
+    var data={"version":"KJV","proverb":[
+      {"chapter":"1","text":"The proverbs of Solomon son of David, king of Israel: for gaining wisdom and instruction; for understanding words of insight; for receiving instruction in prudent behaviour, doing what is right and just and fair; for giving prudence to those who are simple, knowledge and discretion to the young- let the wise listen and add to their learing, and let the discerning get guidance- for understanding proverbs and parables, the sayings and riddles of the wise.\nThe fear of the LORD is the beginning of knowledge, but fools despise wisdom and isntruction.\nListen, my son, to your father's instruction and do not forsake your mother's teaching. They are a garland to grace your head and a chain to adorn your neck.\nMy son, if sinful men entice you, do not give in to them. If they say, \"Come along with us; let's lie in wait for innocent blood, let's ambush some harmless soul; let's swallow them alive, like the grave, and whole, like those who go down to the pit; we will get all sorts of valuable things and fill our houses with plunder; cast lots with us; we will all share the loot\"- my son, do not go along with them, do not set foot on their paths; for their feet rush into evil, they are swift to shed blood. How useless to spread a net where every bird can see it! These men lie in wait for their own blood; they ambush only themselves! Such are the paths of all who go after ill-gotten gain; it takes away the life of those who get it.\nOut in the open wisdom calls aloud, she raises her voice in the public square; on top of the wall she cries out, at the city gate she makes her speech: How long will you who are simple love your simple ways? How long will mockers delight in mockery and fools hate knowledge? Repent at my rebuke! Then I will pour out my thoughts to you, I will make known to you my teachings. But since you refuse to listen when nI call and no one pays attention when I stretch out my hand, since you disregard all my advice and do not accept my rebuke, I in turn will laugh when disaster strikes you; I will mock when calamity overtakes you- when calamity overtakes you like a storm, when disaster sweeps over you like a whirlwind, when distress and trouble overwhelm you.\nThen they will call to me but I will not answer; they will look for me but will not find me, since they hated knowledge and did not choose to fear the LORD. Since they would not accept my advice and spurned my rebuke, they will eat the fruit of their ways and be filled with the fruit of their schemes. For the waywardness of the simple will kill them, and the complacency of fools will destroy them; but whoever listens to me will live in safety and be at ease, without fear of harm."},
+      {"chapter":"2","text":"My son, if you accept my words and store up my commands within you, turning your ear to wisdom, and applying your heart to understanding- indeed, if you call out for insight and cry aloud for understanding, and if you look for it as for silver and search for it as for hidden treasure, then you will understand the fear of the LORD and find the knowledge of God. For the LORD gives wisdom; from his mouth come knowledge and understanding. He holds success in store for the upright, he is a shield to those whose walk is blameless, for he guards the course of the just and protects the way of his faithful ones.\nThen ou will understand what is right and just and fair- every good path. For wisdom will enter your heart, and knowledge will be pleasant to your soul. Discretion will protect you, and understanding will guard you.\nWisdom will save you from the ways of wicked men, from men whose words are perverse, who have left the straight paths to walk in dark ways, who delight in doing wrong and rejoice in the perverseness of evil, whose paths are crooked and who are devious in their ways.\nWiddom will save you also from the adulterous woman, from the wayward woman with her seductive words, who has left the partner of her youth and ignored the covenant she made before God. Surely her house leads down to death and her paths to the spirits of the dead. None who go to her return or attain the paths of life.\nThus you will walk in the ways of the good and keep to the paths of the righteous. For the upright will live in the land, and the blameless will remain in it; but the wicked will be cut off from the land, and the unfaithful will be torn from it."},
+      {"chapter":"3","text":"My son, do not forget my teaching, but keep my commands in your heart, for they will prolong your life many years and bring you peace and prosperity.\nLet love and faithfulness never leave you; bind them around your neck, write them on the tablet of your heart. Then you will win favour and a good name in the sight of God and man.\nTrust in the LORD with all your heart and lean not on our own understanding; in all your ways submit to him, and he will make your paths straight.\nDo not be wise in your own eyes; fear the LORD and shun evil. This will bring health to your body and nourishment to your bones.\nHonour the LORD with your wealth, with the firstfruits of all your crops; then your barns will be filled to overflowing, and your vats will brim over with new wine.\nMy son, do not despise the LORD's discipline, and do not resent his rebuke, because the LORD disciplines those he loves, as a father the son he delights in.\nBlessed are those who find wisdom, those who gain understanding, for she is more profitable than silver and yields better returns than gold. She is more precious than rubues; nothing you desire can compare with her. Long life is in her right hand; in her left hand are riches and honour. Her ways are pleasant ways, and all her paths are peace. She is a tree of life to those who take hold of her; those who hold her fast will be blessed.\nBy wisdom the LORD laid the earth's foundations, by understanding he set the heavens in place; By his knowledge the watery depths were divided, and the clouds let drop the dew.\nMy son, do not let wisdom and understanding out of your sight, preserve sound judgment and discretion; they will be life for you, an ornament to grace your neck. Then you will go on your way in safety, and your foot will not stumble. When you lie down, you will not be afraid; when you lie down, your sleep will be sweet. Have no fear of sudden disaster or of the ruin that overtakes the wicked, for the LORD will be at your side and will keep your foot from being snared.\nDo not withhold good from those to whom it is due, when it is in your power to act. Do not say to your neighbour, \"Come back tomorrow and I'll give it to you\"- when you already have it with you. Do not plot harm against your neighbour, who lives trustfully near you. Do not accuse anyone for no reason- when they have done you no harm.\nDo not envy the vviolent or choose any of their ways.\nFor the LORD detests the perverse but takes the upright into his confidence. The LORD's curse is on the house of the wicked, but he blesses the home of the righteous. He mocks proud mockers but shows favour to the humble and oppressed. The wise inherit honour, but fools get only shame."},
+      {"chapter":"4","text":""},
+      {"chapter":"5","text":""},
+      {"chapter":"6","text":""},
+      {"chapter":"7","text":""},
+      {"chapter":"8","text":""},
+      {"chapter":"9","text":""},
+      {"chapter":"10","text":""},
+      {"chapter":"11","text":""},
+      {"chapter":"12","text":""},
+      {"chapter":"13","text":""},
+      {"chapter":"14","text":""},
+      {"chapter":"15","text":""},
+      {"chapter":"16","text":""},
+      {"chapter":"17","text":""},
+      {"chapter":"18","text":""},
+      {"chapter":"19","text":""},
+      {"chapter":"20","text":""},
+      {"chapter":"21","text":""},
+      {"chapter":"22","text":""},
+      {"chapter":"23","text":""},
+      {"chapter":"24","text":""},
+      {"chapter":"25","text":""},
+      {"chapter":"26","text":""},
+      {"chapter":"27","text":""},
+      {"chapter":"28","text":""},
+      {"chapter":"29","text":""},
+      {"chapter":"30","text":""},
+      {"chapter":"31","text":""}]}
+    document.getElementsByClassName("version")[0].innerHTML=data.version;
+    function load(chap) {
+      document.getElementsByClassName('chapter')[0].innerHTML="Chapter "+chap;
+      document.getElementsByClassName('datepicker')[0].value=chap;
+      var verses = document.getElementById('verses');
+      verses.innerHTML='';
+      data.proverb[chap-1].text.split('\n').forEach(function(verse) {
+        var el = document.createElement('p');
+        el.className='text'
+        el.innerHTML=verse.replace('LORD','<span class="lord">LORD</span>');
+        verses.appendChild(el);
+      })
+    }
+    load(new Date().getDate());
+  </script>
+</body>
+</html>
