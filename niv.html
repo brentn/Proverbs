@@ -54,7 +54,7 @@
       data.proverb[chap-1].text.split('\n').forEach(function(verse) {
         var el = document.createElement('p');
         el.className='text'
-        el.innerHTML=verse.replace('LORD','<span class="lord">LORD</span>');
+        el.innerHTML=verse.split('LORD').join('<span class="lord">LORD</span>');
         verses.appendChild(el);
       })
     }
